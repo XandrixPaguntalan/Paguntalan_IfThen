@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttondecision1.setOnClickListener(this);
         buttondecision2.setOnClickListener(this);
         textlore = findViewById(R.id.textlore);
-        textlore.setText("It's already past your bed time and you are having fun playing games. Will you continue to play games for 2 more hours?");
+        textlore.setText("You are playing a MOBA game and your character is low on health. You saw an enemy who is also low health and is trying to escape. Will you chase and try to kill your enemy?");
     }
     @Override
     public void onClick(View view){
@@ -34,12 +34,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch(view.getId()){
             case R.id.buttondecision1:
-            textresult.setText("Your mother caught you playing games past your bed time and confiscated all your gadgets.");
+            textresult.setText("You chased the enemy for 30 seconds and you were killed because of an another enemy hiding in the bush.");
             break;
         }
         switch(view.getId()){
             case R.id.buttondecision2:
-            textresult.setText("Your mother almost caught you playing games past your bed time.");
+            textresult.setText("You recalled back to your base to regenerate and your enemy was killed because he was chased by one of your teammates.");
             break;
         }
 
